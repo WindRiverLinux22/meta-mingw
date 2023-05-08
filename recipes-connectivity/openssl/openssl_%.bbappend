@@ -27,5 +27,5 @@ do_configure:mingw32 () {
         perl ${B}/configdata.pm --dump
 }
 
-FILES_${PN}-engines:mingw32:class-nativesdk = "${libdir}/engines-1_1"
-RDEPENDS_${PN}-misc:remove:mingw32:class-nativesdk = "perl"
+FILES:${PN}-engines:mingw32:class-nativesdk = "${libdir}/engines-1_1"
+RDEPENDS:${PN}-misc:remove:mingw32:class-nativesdk = "perl"
